@@ -1,0 +1,51 @@
+@media (min-width: 1200px) {
+   .form__body {
+      display: grid;
+      grid-template-rows: 48px repeat(3, 1fr);
+      grid-row-gap: 32px;
+      justify-content: start;
+   }
+
+   .form__fieldset {
+      align-items: baseline;
+      display: flex;
+      gap: 24px;
+   }
+
+   .form__fieldset-title {
+      display: flex;
+      flex-direction: column;
+      min-width: 160px;
+      min-height: 48px;
+   }
+
+   .form__fieldset-items {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      flex-direction: row;
+   }
+
+   .contener-price {
+      display: flex;
+      gap: 20px;
+   }
+
+   .form__fieldset-input {
+      min-width: 264px;
+   }
+
+   .contener-sale {
+      display: flex;
+      gap: 20px;
+      align-items: baseline;
+   }
+
+   .form__fieldset-sale20 {
+      width: 100%;
+   }
+
+   .form__fieldse-dropdown select {   
+      width: 180px;
+   }
+}
