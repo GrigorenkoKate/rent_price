@@ -26,12 +26,12 @@
       flex-direction: row;
    }
 
-   .form__fieldset-item.form__fieldset-item--price {
+   .form__fieldset-item.form__fieldset-item--price-wrapper {
       display: flex;
       gap: 20px;
    }
 
-   .form__fieldset-item.form__fieldset-item--text {
+   .form__fieldset-item.form__fieldset-item--sale-wrapper {
       display: flex;
       gap: 20px;
       align-items: baseline;
@@ -41,9 +41,7 @@
       min-width: 264px;
    }
 
-   .form__fieldset-sale20 {
-      width: 100%;
-   }
+
 
    .form__fieldset-dropdown select {
       width: 180px;
