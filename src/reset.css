@@ -1,9 +1,4 @@
 /*Обнуление*/
-* {
-   padding: 0;
-   margin: 0;
-   border: 0;
- }
  *,
  *:before,
  *:after {
@@ -37,6 +32,8 @@
    -ms-text-size-adjust: 100%;
    -moz-text-size-adjust: 100%;
    -webkit-text-size-adjust: 100%;
+     margin: 0;
+     padding: 0;
  }
  input,
  button,
@@ -77,4 +74,8 @@
  h6 {
    font-size: inherit;
    font-weight: 400;
+ }
+
+ input {
+     margin: 0;
  }

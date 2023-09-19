@@ -2,180 +2,174 @@
 <html lang="ru">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="src/reset.css">
-   <link rel="stylesheet" href="src/common.css">
-   <link rel="stylesheet" href="src/components/form/form.css">
-   <link rel="stylesheet" href="src/components/form/form-@media.css">
-   <link rel="stylesheet" href="src/components/margin.css">
-   <link rel="stylesheet" href="src/components/padding.css">
-   <title>price</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/reset.css">
+    <link rel="stylesheet" href="src/common.css">
+    <link rel="stylesheet" href="src/components/checkbox/checkbox.css">
+    <link rel="stylesheet" href="src/components/form/form.css">
+    <link rel="stylesheet" href="src/components/form/form-@media.css">
+    <link rel="stylesheet" href="src/components/margin.css">
+    <link rel="stylesheet" href="src/components/padding.css">
+    <title>price</title>
 </head>
 
 <body>
-   <div class="container">
-      <form id="price-form" class="form">
-         <div class="form__header">
+<div class="container">
+    <form id="price-form" class="form">
+        <div class="form__header">
             <div class="form__header-title">
-               <span>Период изменения цены</span>
+                <span>Период изменения цены</span>
             </div>
             <a class="form__header-close" href="">
-               Сбросить
+                Сбросить
             </a>
-         </div>
-
-         <div class="form__body">
+        </div>
+        <div class="form__body">
             <div class="form__fieldset">
-               <div class="form__fieldset-title">
-                  <span>Дни недели</span>
-               </div>
-               <div class="form__fieldset-items form__fieldset-items--checkbox">
-                  <label class="checkbox checkbox--hidden"><input type="checkbox" name="mon"
-                        value="1"><span>ПН</span></label>
-                  <label class="checkbox checkbox--hidden"><input type="checkbox" name="tue"
-                        value="2"><span>ВТ</span></label>
-                  <label class="checkbox checkbox--hidden"><input type="checkbox" name="wed"
-                        value="3"><span>СР</span></label>
-                  <label class="checkbox checkbox--hidden"><input type="checkbox" name="thu"
-                        value="4"><span>ЧТ</span></label>
-                  <label class="checkbox checkbox--hidden"><input type="checkbox" name="fri"
-                        value="5"><span>ПТ</span></label>
-                  <label class="checkbox checkbox--hidden"><input type="checkbox" name="sat"
-                        value="6"><span>СБ</span></label>
-                  <label class="checkbox checkbox--hidden"><input type="checkbox" name="sun"
-                        value="0"><span>ВС</span></label>
-               </div>
+                <div class="form__fieldset-title">
+                    <span>Дни недели</span>
+                </div>
+                <div class="form__fieldset-items form__fieldset-items--checkboxes">
+                    <label class="checkbox checkbox--button">
+                        <input type="checkbox" name="mon" value="1"><span>ПН</span>
+                    </label>
+                    <label class="checkbox checkbox--button"><input type="checkbox" name="tue"
+                                                                    value="2"><span>ВТ</span></label>
+                    <label class="checkbox checkbox--button"><input type="checkbox" name="wed"
+                                                                    value="3"><span>СР</span></label>
+                    <label class="checkbox checkbox--button"><input type="checkbox" name="thu"
+                                                                    value="4"><span>ЧТ</span></label>
+                    <label class="checkbox checkbox--button"><input type="checkbox" name="fri"
+                                                                    value="5"><span>ПТ</span></label>
+                    <label class="checkbox checkbox--button"><input type="checkbox" name="sat"
+                                                                    value="6"><span>СБ</span></label>
+                    <label class="checkbox checkbox--button"><input type="checkbox" name="sun"
+                                                                    value="0"><span>ВС</span></label>
+                </div>
             </div>
             <div class="form__fieldset">
-               <div class="form__fieldset-title"><span>Цена за сутки</span>
-               </div>
-               <div class="form__fieldset-items">
-                  <div class="contener-price">
-                     <div class="form__fieldset-input">
-                     <input class="form__fieldset-input-style" type="text" placeholder="Введите сумму">
-                     </div>
-                     <div class="form__fieldse-dropdown">
-                     <span class="form__fieldse-dropdown-subject">За сколько гостей</span>
-                     <select>
-                        
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                     </select>
-                     </div>
-                  </div>
-
-                  <div class="contener-checkbox">               
-                     <div class="form__fieldset-checkbox">
-                     <label class="checkbox checkbox--one"><input type="checkbox" name="price" value="1"><span
-                           class="checkbox-text">Добавить цену со скидкой</span></label>
-                     </div>
-                  </div>
-
-                  <div class="contener-sale">
-                     <div class="form__fieldset-input">
-                        <input class="form__fieldset-input-style" type="text" placeholder="Введите сумму со скидкой">
-                     </div>
-                     <div class="form__fieldset-sale20">
-                        <h2>Скидка 20%</h2>
-                     </div>
-                     
-                  </div>
-               </div>
-
+                <div class="form__fieldset-title"><span>Цена за сутки</span>
+                </div>
+                <div class="form__fieldset-items">
+                    <div class="form__fieldset-item form__fieldset-item--price">
+                        <label class="form__fieldset-input">
+                            <input class="form__fieldset-input-style" name="day_price" type="text" placeholder="Введите сумму">
+                        </label>
+                        <label class="form__fieldset-dropdown">
+                            <span class="form__fieldset-dropdown-subject">За сколько гостей</span>
+                            <select name="day_guests">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="form__fieldset-item form__fieldset-item--checkbox">
+                        <label class="checkbox"><input type="checkbox" name="is_day_discount_price" value="1"><span
+                                class="checkbox__text">Добавить цену со скидкой</span></label>
+                    </div>
+                    <div class="form__fieldset-item form__fieldset-item--text">
+                        <label class="form__fieldset-input">
+                            <input class="form__fieldset-input-style" name="day_discount_price" type="text"
+                                   placeholder="Введите сумму со скидкой">
+                        </label>
+                        <div class="form__fieldset-sale20">
+                            <h2>Скидка 201%</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="form__fieldset">
-               <div class="form__fieldset-title"><span>Цена за ночь</span>
-                  <span class="form__fieldset-title form__fieldset-title--grey">(необязательно)</span>
-               </div>
-               <div class="form__fieldset-items">
-                  <div class="contener-price">
-                     <div class="form__fieldset-input">
-                     <input class="form__fieldset-input-style" type="text" placeholder="Введите сумму">
-                     </div>
-                     <div class="form__fieldse-dropdown">
-                     <span class="form__fieldse-dropdown-subject">За сколько гостей</span>
-                     <select>
-                        
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                     </select>
-                     </div>
-                  </div>
+                <div class="form__fieldset-title"><span>Цена за ночь</span>
+                    <span class="form__fieldset-title form__fieldset-title--grey">(необязательно)</span>
+                </div>
+                <div class="form__fieldset-items">
+                    <div class="contener-price">
+                        <div class="form__fieldset-input">
+                            <input class="form__fieldset-input-style" type="text" placeholder="Введите сумму">
+                        </div>
+                        <div class="form__fieldset-dropdown">
+                            <span class="form__fieldset-dropdown-subject">За сколько гостей</span>
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
 
-                  <div class="contener-checkbox">               
-                     <div class="form__fieldset-checkbox">
-                     <label class="checkbox checkbox--one"><input type="checkbox" name="price" value="1"><span
-                           class="checkbox-text">Добавить цену со скидкой</span></label>
-                     </div>
-                  </div>
+                    <div class="form__fieldset-checkbox">
+                        <label class="checkbox"><input type="checkbox" name="price" value="1"><span
+                                class="checkbox__text">Добавить цену со скидкой</span></label>
+                    </div>
 
-                  <div class="contener-sale">
-                     <div class="form__fieldset-input">
-                        <input class="form__fieldset-input-style" type="text" placeholder="Введите сумму со скидкой">
-                     </div>
-                     <div class="form__fieldset-sale20">
-                        <h2>Скидка 20%</h2>
-                     </div>
-                     
-                  </div>
-               </div>
+                    <div class="contener-sale">
+                        <div class="form__fieldset-input">
+                            <input class="form__fieldset-input-style" type="text"
+                                   placeholder="Введите сумму со скидкой">
+                        </div>
+                        <div class="form__fieldset-sale20">
+                            <h2>Скидка 20%</h2>
+                        </div>
+
+                    </div>
+                </div>
 
             </div>
             <div class="form__fieldset">
-               <div class="form__fieldset-title"><span>Цена за час</span>
-                  <span class="form__fieldset-title form__fieldset-title--grey">(необязательно)</span>
-               </div>
-               <div class="form__fieldset-items">
-                  <div class="contener-price">
-                     <div class="form__fieldset-input">
-                     <input class="form__fieldset-input-style" type="text" placeholder="Введите сумму">
-                     </div>
-                     <div class="form__fieldse-dropdown">
-                     <span class="form__fieldse-dropdown-subject">За сколько гостей</span>
-                     <select>
-                        
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                     </select>
-                     </div>
-                  </div>
+                <div class="form__fieldset-title"><span>Цена за час</span>
+                    <span class="form__fieldset-title form__fieldset-title--grey">(необязательно)</span>
+                </div>
+                <div class="form__fieldset-items">
+                    <div class="contener-price">
+                        <label class="form__fieldset-input">
+                            <input class="form__fieldset-input-style" name="day_price" type="text"
+                                   placeholder="Введите сумму">
+                        </label>
+                        <label class="form__fieldset-dropdown">
+                            <span class="form__fieldset-dropdown-subject">За сколько гостей</span>
+                            <select name="day_guests">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </label>
+                    </div>
 
-                  <div class="contener-checkbox">               
-                     <div class="form__fieldset-checkbox">
-                     <label class="checkbox checkbox--one"><input type="checkbox" name="price" value="1"><span
-                           class="checkbox-text">Добавить цену со скидкой</span></label>
-                     </div>
-                  </div>
 
-                  <div class="contener-sale">
-                     <div class="form__fieldset-input">
-                        <input class="form__fieldset-input-style" type="text" placeholder="Введите сумму со скидкой">
-                     </div>
-                     <div class="form__fieldset-sale20">
-                        <h2>Скидка 20%</h2>
-                     </div>
-                     
-                  </div>
-               </div>
+                    <div class="form__fieldset-checkbox">
+                        <label class="checkbox"><input type="checkbox" name="price" value="1"><span
+                                class="checkbox__text">Добавить цену со скидкой 1 Добавить цену со скидкой 1 Добавить цену со скидкой 1 Добавить цену со скидкой 1 Добавить цену со скидкой 1 Добавить цену со скидкой 1 Добавить цену со скидкой 1 Добавить цену со скидкой 1</span></label>
+                    </div>
+
+
+                    <div class="contener-sale">
+                        <div class="form__fieldset-input">
+                            <input class="form__fieldset-input-style" type="text"
+                                   placeholder="Введите сумму со скидкой">
+                        </div>
+                        <div class="form__fieldset-sale20">
+                            <h2>Скидка 20%</h2>
+                        </div>
+
+                    </div>
+                </div>
 
             </div>
 
-         </div>
-      </form>
-   </div>
+        </div>
+    </form>
+</div>
 </body>
 
 </html>
