@@ -20,32 +20,27 @@
    }
 
    .form__fieldset-items {
-      display: flex;
       gap: 16px;
       flex-wrap: wrap;
       flex-direction: row;
    }
 
-   .contener-price {
+   .form__fieldset-item.form__fieldset-item--price-wrapper {
       display: flex;
       gap: 20px;
+   }
+
+   .form__fieldset-item.form__fieldset-item--sale-wrapper {
+      display: flex;
+      gap: 20px;
+      align-items: baseline;
    }
 
    .form__fieldset-input {
       min-width: 264px;
    }
 
-   .contener-sale {
-      display: flex;
-      gap: 20px;
-      align-items: baseline;
-   }
-
-   .form__fieldset-sale20 {
-      width: 100%;
-   }
-
-   .form__fieldse-dropdown select {   
+   .form__fieldset-dropdown select {
       width: 180px;
    }
 }
